@@ -7,7 +7,7 @@ Python application that provides a RESTful API for LLM services. The application
 ## Prerequisites
 
 - Python 3.11
-- Google Cloud SDK
+- Google Cloud SDK (configured with the right project and billing account)
 
 ## Setup Instructions
 
