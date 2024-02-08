@@ -6,7 +6,7 @@ authors = []
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 openai = "<2"
 langchain-community = "^0.0.7"
 langchain-core = "^0.1.4"

@@ -14,17 +14,17 @@ setup:
 	@. venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt && pip install -e llm-services/packages/*/
 	@echo "Requirements installed."
 	@if [ ! -f .env ]; then \
-		touch env; \
+		touch .env; \
 		echo "\033[0;31mPlease add your OpenAI API key to the .env file.\033[0m"; \
 	else \
 		echo "\033[0;31m.env file already exists.\033[0m"; \
 	fi
 
 # Load environment variables
-.PHONY: set_env
-include .env
+.PHONY: set_env 
 set_env:
 	@echo "Loading environment variables..."
+	$(eval export $(shell sed 's/#.*//g' .env | xargs))
 	@echo "OpenAI key:" $(OPENAI_API_KEY)
 
 # Serve the application locally
