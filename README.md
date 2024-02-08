@@ -53,8 +53,14 @@ To deploy the application to Google Cloud Run, run the following command:
 gcloud run deploy llm-demo --source ./llm-services/ --allow-unauthenticated --region us-east1 --set-env-vars=OPENAI_API_KEY=your_key
 ```
 
-## Observability
+## Observability platform
 
 We use LangSmith to monitor the application. 
 To access the monitoring dashboard, visit the following link:
 [https://smith.langchain.com/o/c12a8b7f-6f5f-4f2a-994d-fe049b3b9ab8/](https://smith.langchain.com/o/c12a8b7f-6f5f-4f2a-994d-fe049b3b9ab8/)
+
+## Related resources
+
+- https://cloud.google.com/blog/products/ai-machine-learning/deploy-langchain-on-cloud-run-with-langserve
+- https://python.langchain.com/docs/langsmith/
+- https://python.langchain.com/docs/langserve
