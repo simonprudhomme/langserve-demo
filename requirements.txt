@@ -1,0 +1,7 @@
+langchain-cli==0.0.19
+langchain-community==0.0.7
+langchain-core==0.1.19
+langserve==0.0.31
+langsmith==0.0.87
+pydantic==1.10.13
+ipykernel

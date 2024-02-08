@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "llm-services"
+version = "0.1.0"
+description = "LLM Services for Noibu"
+authors = ["Simon Prud'homme <simon.prudhomme@noibu.com>"]
+readme = "README.md"
+packages = [
+    { include = "app" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = "^0.23.2"
+langserve = {extras = ["server"], version = ">=0.0.30"}
+pydantic = "<2"
+issue-explanation = {path = "packages/issue-explanation", develop = true}
+
+[tool.poetry.group.dev.dependencies]
+langchain-cli = ">=0.0.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

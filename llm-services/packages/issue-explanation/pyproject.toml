@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "issue-explanation"
+version = "0.0.1"
+description = "issue-explanation"
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "<2"
+langchain-community = "^0.0.7"
+langchain-core = "^0.1.4"
+
+[tool.poetry.group.dev.dependencies]
+langchain-cli = ">=0.0.21"
+fastapi = "^0.104.0"
+sse-starlette = "^1.6.5"
+
+[tool.langserve]
+export_module = "issue_explanation.chain"
+export_attr = "chain"
+
+[tool.templates-hub]
+use-case = "chatbot"
+author = "LangChain"
+integrations = ["OpenAI"]
+tags = ["getting-started"]
+
+[build-system]
+requires = [
+    "poetry-core",
+]
+build-backend = "poetry.core.masonry.api"
