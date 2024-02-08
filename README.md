@@ -2,7 +2,7 @@
 
 ## Overview
 
-LLM Services is a Python application that provides a RESTful API for the LLM services. The application is built using LangChain, LangServe, LangSmith, Fast API and is designed to be deployed locally or to Google Cloud Run.
+Python application that provides a RESTful API for LLM services. The application is built using LangChain, LangServe, LangSmith, Fast API and is designed to be deployed locally or to Google Cloud Run.
 
 ## Prerequisites
 
