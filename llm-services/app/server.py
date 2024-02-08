@@ -13,6 +13,9 @@ async def redirect_root_to_docs():
 from issue_explanation.chain import chain as issue_explanation_chain
 add_routes(app, issue_explanation_chain, path="/issue-explanation")
 
+#from rag_pinecone import chain as rag_pinecone_chain
+#add_routes(app, rag_pinecone_chain, path="/rag-pinecone")
+
 if __name__ == "__main__":
     import uvicorn
 
