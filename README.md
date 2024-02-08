@@ -24,7 +24,7 @@ LLM Services is a Python application that provides a RESTful API for the LLM ser
     Before running the application, make sure to edit environment variables:
 
     ```
-    make env
+    make set_env
     ```
 
 3. **Serve Application Locally**
