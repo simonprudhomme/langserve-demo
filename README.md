@@ -61,6 +61,8 @@ To access the monitoring dashboard, visit the following link:
 
 ## Related resources
 
-- https://cloud.google.com/blog/products/ai-machine-learning/deploy-langchain-on-cloud-run-with-langserve
-- https://python.langchain.com/docs/langsmith/
-- https://python.langchain.com/docs/langserve
+- Deploy to GCP: https://cloud.google.com/blog/products/ai-machine-learning/deploy-langchain-on-cloud-run-with-langserve
+- LangSmith: https://python.langchain.com/docs/langsmith/
+- LangServe: https://python.langchain.com/docs/langserve
+- LangChain templates: https://github.com/langchain-ai/langchain/tree/master/templates
+- 
